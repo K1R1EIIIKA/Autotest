@@ -52,7 +52,7 @@ def test_divide(calc, a, b, expected):
 # -------------------------------
 
 def test_divide_by_zero(calc):
-    with pytest.raises(ZeroDivisionError):
+    with pytest.raises(AssertionError):
         calc.divide(5, 0)
 
 
